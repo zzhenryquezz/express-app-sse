@@ -4,7 +4,8 @@
   "description": "node app to emit events to other servers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/serve.ts",
+    "dev": "ts-node-dev --no-notify --transpile-only src/serve.ts"
   },
   "repository": {
     "type": "git",
