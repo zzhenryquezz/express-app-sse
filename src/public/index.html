@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main id="app" class="grid grid-cols-3">
+        <div class="p-4 border-r">
+            <label for="emit-event-name" class="block text-gray-700 text-sm font-bold mb-2">
+                Emit event name
+            </label>
+            <input
+                id="emit-event-name"
+                type="text"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+            
+            <label for="emit-event-payload" class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+                Event payload
+            </label>
+            <textarea
+                id="emit-event-payload"
+                type="text"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            ></textarea>
+            <button
+                id="emit-event-button"
+                class="bg-purple-500 py-2 px-4 font-bold mt-4 text-white">Send</button>
+        </div>
+        <div class="border-r h-screen p-4">
+            <label for="subscription-event-name" class="block text-gray-700 text-sm font-bold mb-2">
+                Subscribe event name
+            </label>
+            <input
+                id="subscription-event-name"
+                type="text"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+            
+            <button
+                id="subscription-event-button"
+                class="bg-purple-500 py-2 px-4 font-bold mt-4 text-white">
+                Subscribe
+            </button>
+            <ul id="subscription-list" class="mt-4">
+
+            </ul>
+        </div>
+        <div class="h-screen p-4">
+            <ul id="received-list" class="mt-4">
+
+            </ul>
+        </div>
+    </main>
+</body>
+    <script src="./main.js"></script>
+</html>
