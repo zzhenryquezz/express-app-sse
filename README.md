@@ -1,5 +1,7 @@
-# webhook-events-listener
-node app to emit events to other servers
+# SSE app 
+[Server Sent Events (SSE)](https://en.wikipedia.org/wiki/Server-sent_events) is a server push technology enabling a client to receive automatic updates from a server via HTTP connection.
+
+This app is a simple implementation of SSE system using express and `EventTarget` class.
 
 
 ## Usage
